@@ -9,10 +9,12 @@ const SideBar = () => {
       flex flex-col bg-primary text-white">
 
       <SideBarIcon icon={<FaFire size='28' />} />
+      <Divider />
       <SideBarIcon icon={<FaPoo size='28' />} />
-      <SideBarIcon icon={<BsPlus size='28' />} />
       <SideBarIcon icon={<BsFillLightningFill size='28' />} />
-      <SideBarIcon icon={<BsGearFill size='28' />} />
+      <SideBarIcon icon={<BsPlus size='50' />} />
+      <Divider />
+      <SideBarIcon icon={<BsGearFill size='22' />} />
     </div>
   );
 };
@@ -27,5 +29,6 @@ const SideBarIcon = ({ icon, text = 'tooltip 💡' }) => (
   </div>
 
 );
- 
+
+  const Divider = () => <hr className="sidebar-hr" />;
 export default SideBar;
